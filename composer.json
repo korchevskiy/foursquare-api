@@ -1,0 +1,31 @@
+{
+    "name": "microcore/foursquare",
+    "description": "Foursquare Api Client",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["framework"],
+    "homepage": "http://micro-core.tk",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Sergey Korchevskiy"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/korchevskiy/foursquare-api"
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "ext-intl": "*",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foursquare\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    }
+}
