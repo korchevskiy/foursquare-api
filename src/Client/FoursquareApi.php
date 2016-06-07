@@ -124,8 +124,8 @@ class FoursquareApi
     public function getPublic($api, $data = array())
     {
         $data = array_merge(array(
-                'clientId'     => $this->_clientId,
-                'clientSecret' => $this->_clientSecret,
+                'client_id'     => $this->_clientId,
+                'client_secret' => $this->_clientSecret,
                 'locale'        => $this->_locale,
             ), $data);
         return $this->api('get', $api, $data);
@@ -157,8 +157,8 @@ class FoursquareApi
     public function postPublic($api, $data = array())
     {
         $data = array_merge(array(
-                'clientId'     => $this->_clientId,
-                'clientSecret' => $this->_clientSecret,
+                'client_id'     => $this->_clientId,
+                'client_secret' => $this->_clientSecret,
                 'locale'        => $this->_locale,
             ), $data);
         return $this->api('post', $api, $data);
